@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth;  
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Georgia", "serif";
+  font-weight: lighter;
+  line-height: 130%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, 
+body {
+    overflow-x: hidden; 
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-color: black;
+  overflow: hidden;
+}
+.mem-slider-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ryzhkin {
+  color: white;
+  margin: 60px 0;
+  font-size: 3rem;
+}
+.photo-container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  /* height: ; */
+  /* margin: 0 auto; */
+  /* align-self: center; */
+  border-radius: 10px;
+}
+img {
+  width: 550px;
+  height: 700px;
+  display: none;
+  /* border-radius: 10px; */
+  margin: 0 auto;
+}
+img.active {
+  display: block;
+}
+
+.mem {
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin: 30px auto;
+}
+.mems-and-bullets {
+  width: 90%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mems {
+  margin-right: auto;
+}
+
+.slider-bullets {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
+.slider-bullet {
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+  border-radius: 50%;
+  border: 2px solid cornflowerblue;
+  background-color:cornflowerblue;
+}
+.slider-bullet.active {
+  background-color: black;
+}
